@@ -3,9 +3,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1> Yashi's component library</h1>
+    <h1 id="heading"> Yashi's component library</h1>
     <p>I'm attending neogcamp and i want to make a library which would make all my projects look good and consistent</p>
 
     <hr>
@@ -22,53 +23,73 @@
      <div>This is the centered container and it will go till the specified width</div>
      <hr>
      <h2>@ links</h2>
-     <a href="/"> primary link</a><br>
-     <a href="/">secondary link</a>
+     <a class="link primary-link" href=""> primary link</a>
+     <a class="link secondary-link" href="">secondary link</a>
      <hr>
      <h2>@list</h2>
      <h3>unordered list</h3>
-     <ul>
+     <ul class="non-bullet">
          <li>milk</li>
          <li>bread</li>
          <li>eggs</li>
      </ul>
      <h3>Inline unordered list</h3>
-     <ul>
-         <li>inline item1</li>
-         <li>inline item2</li>
-         <li>inline item3</li>
+     <ul class="non-bullet" >
+         <li class="item-inline">inline item1</li>
+         <li class="item-inline">inline item2</li>
+         <li class="item-inline">inline item3</li>
      </ul>
      <h3>reverse ordered list</h3>
-     <ol>
+     <ol reversed>
          <li>item 1</li>
          <li>item 2</li>
          <li>item 3</li>
      </ol>
      <hr>
      <h2>@nav</h2>
-     <div>iAmADeveloper</div>
-<nav>
-    <ul>
-        <li>
-            <a href="/">home</a>
+     
+      <nav class="navigation">
+        <div class="nav-brand">iAmDeveloper</div>
+    <ul class="non-bullet nav-pills">
+        <li class="item-inline">
+            <a class="link" href="">home</a>
         </li>
-        <li>
-            <a href="/">projects</a>
+        <li class="item-inline">
+            <a class="link" href="">projects</a>
         </li>
-        <li>
-            <a href="/">about</a>
+        <li class="item-inline">
+            <a class="link" href="">about</a>
         </li>
     </ul>
 
 </nav>
-   <div style="height:30vh;">
-
-     </div>
+   
      <hr>
-     <header>
-         <img src="images/hero.svg" style="align-items: center;">
+     <header class="hero">
+         <img  class="hero-img"src="images/hero.svg" >
+         <h1 class="hero-heading">adarsh balika the <span class="text-inverted">web developer</span> </h1>
      </header>
+     <hr>
+     <h2>@section</h2>
+     <section>
+         <h3>white background </h3>
+         <p>this text will have white background</p>
+     </section>
+     <section>
+         <h3>off white background</h3>
+         <p>this text will have off-white background</p>
+     </section>
+     <hr>
+     <h2>@footer</h2>
+     <div>this is a footer </div>
+     <ul>
+         <li>one icecream</li>
+         <li>two icecream</li>
+         <li>three icecream</li>
+     </ul>
+     <div style="height:30vh;">
 
+    </div>
 
 </body>
 </html>
