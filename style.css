@@ -11,6 +11,7 @@ hr{
 :root{
     --primary-color:#7C3AED;
     --dark-gray:#6B7280;
+    --off-white:#F3F4F6;
 }
 
 .link{
@@ -82,3 +83,30 @@ hr{
 .text-inverted{
     color: var(--primary-color);
 }
+
+.section h3{
+    text-align: center;
+    padding: 2rem;
+}
+
+.section-ow{
+    background-color: var(--off-white);
+}
+
+.container-center{
+    max-width: 600px;
+    margin: auto;
+}
+
+.footer{
+    background-color: var(--primary-color);
+    text-align: center;
+    padding: 2rem 0rem;
+    color: white;
+    border-bottom-right-radius: 2rem;
+}
+.footer .link{
+    color: white;
+}
+
+
